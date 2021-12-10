@@ -8,10 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var redSliderLabel: UILabel!
+    @IBOutlet weak var greenValueLabel: UILabel!
+    @IBOutlet weak var blueValueLabel: UILabel!
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillLayoutSubviews() {
+        topView.layer.cornerRadius = 10
     }
 
 
