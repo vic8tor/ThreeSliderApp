@@ -51,9 +51,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="51" id="dj4-if-Qc8"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="s0x-ql-8Df">
                                                 <rect key="frame" x="81" y="0.0" width="41.5" height="136"/>
@@ -77,9 +74,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="41.5" id="7uH-qz-2m8"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-Jf-oBX">
                                                 <rect key="frame" x="152.5" y="0.0" width="202" height="136"/>
@@ -87,14 +81,23 @@
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-zh-y2x">
                                                         <rect key="frame" x="-2" y="0.0" width="206" height="31"/>
                                                         <connections>
-                                                            <action selector="moveRedSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="gqb-2O-b0t"/>
+                                                            <action selector="moveSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="A3S-Ag-GfE"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S8P-II-87C">
                                                         <rect key="frame" x="-2" y="53" width="206" height="31"/>
+                                                        <connections>
+                                                            <action selector="moveSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="Hc7-mL-fcl"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v46-RA-Ddu">
                                                         <rect key="frame" x="-2" y="106" width="206" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="v46-RA-Ddu" secondAttribute="height" multiplier="101:15" id="LKp-L1-uog"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="moveSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="R39-oI-BHQ"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -122,12 +125,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueSlider" destination="v46-RA-Ddu" id="WcG-re-aXM"/>
+                        <outlet property="blueSlider" destination="v46-RA-Ddu" id="Fun-Zp-uSu"/>
                         <outlet property="blueValueLabel" destination="SmD-lF-dnd" id="7ho-ep-lLg"/>
-                        <outlet property="greenSlider" destination="S8P-II-87C" id="KpP-vr-gZZ"/>
+                        <outlet property="greenSlider" destination="S8P-II-87C" id="W4L-aH-rV4"/>
                         <outlet property="greenValueLabel" destination="lL1-Nr-9eQ" id="tbq-zG-TzW"/>
-                        <outlet property="redSlider" destination="qG6-zh-y2x" id="6M9-LM-5ih"/>
-                        <outlet property="redSliderLabel" destination="krL-aX-MVF" id="Mlz-sU-HPF"/>
+                        <outlet property="redSlider" destination="qG6-zh-y2x" id="rH4-I1-RtK"/>
+                        <outlet property="redValueLabel" destination="krL-aX-MVF" id="6JR-hR-odi"/>
                         <outlet property="topView" destination="7D2-ip-kOa" id="OTZ-5E-Xmr"/>
                     </connections>
                 </viewController>
