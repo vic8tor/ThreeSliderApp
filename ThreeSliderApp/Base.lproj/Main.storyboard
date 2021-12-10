@@ -51,6 +51,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="dj4-if-Qc8"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="s0x-ql-8Df">
                                                 <rect key="frame" x="81" y="0.0" width="41.5" height="136"/>
@@ -74,20 +77,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="41.5" id="7uH-qz-2m8"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-Jf-oBX">
                                                 <rect key="frame" x="152.5" y="0.0" width="202" height="136"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-zh-y2x">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-zh-y2x">
                                                         <rect key="frame" x="-2" y="0.0" width="206" height="31"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="202" id="SeF-9A-oBo"/>
-                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="moveRedSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="gqb-2O-b0t"/>
+                                                        </connections>
                                                     </slider>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S8P-II-87C">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S8P-II-87C">
                                                         <rect key="frame" x="-2" y="53" width="206" height="31"/>
                                                     </slider>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v46-RA-Ddu">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v46-RA-Ddu">
                                                         <rect key="frame" x="-2" y="106" width="206" height="31"/>
                                                     </slider>
                                                 </subviews>
